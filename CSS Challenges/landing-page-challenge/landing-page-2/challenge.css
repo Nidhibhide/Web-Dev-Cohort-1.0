@@ -8,23 +8,50 @@
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(0, 0, 0, 0.7); /* Dark but slightly transparent */
+  background-image: url("./assets/chaicohort.png");
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  background-blend-mode: darken;
 }
 
 /* Navbar styles */
 .navbar {
   /* Add styles for the navbar */
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
 }
 
 .logo {
   /* Add styles for the logo */
+  display: flex;
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(23, 218, 23);
+  align-items: center;
+  gap: 5px;
 }
 
 .logo img {
   /* Add styles for the logo image */
+  border-radius: 30px;
+  border: 4px solid rgb(83, 236, 83);
 }
-
+.menu {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  align-items: center;
+}
 .menu a {
   /* Add styles for the navigation links */
+  text-decoration: none;
+  color: white;
 }
 
 .menu a:hover {
@@ -34,26 +61,47 @@ body {
 /* Hero section styles */
 .hero {
   /* Add styles for the hero section */
+  /* background-image: url("./assets/chaicohort.png");
+  background-repeat: no-repeat; */
+
+  /* height:500px; */
 }
 
 .hero-content {
   /* Add styles for the hero content container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0px;
+  gap: 15px;
 }
 
 .hero-content h1 {
   /* Add styles for the hero heading */
+  font-size: 35px;
+  color: rgb(83, 236, 83);
 }
 
 .hero-content p {
   /* Add styles for the hero paragraph */
+  font-size: 20px;
+  color: white;
 }
 
 .hero-content img {
   /* Add styles for the image in the hero section */
+  border: 5px solid rgb(83, 236, 83);
+  border-radius: 10px;
 }
 
 .enroll-button {
   /* Add styles for the enroll button */
+  width: 230px;
+  padding: 22px 0px;
+  border: none;
+  font-size: 20px;
+  border-radius: 35px;
+  background-color: rgb(83, 236, 83);
 }
 
 .enroll-button:hover {
@@ -63,16 +111,34 @@ body {
 /* Highlights section styles */
 .highlights {
   /* Add styles for the highlights section */
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0px;
+  color: white;
 }
 
 .highlight-card {
   /* Add styles for each highlight card */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 320px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgb(42, 34, 34);
 }
 
 .highlight-card h3 {
   /* Add styles for highlight card headings */
+  font-size: 21px;
+  color: rgb(83, 236, 83);
 }
 
 .highlight-card p {
   /* Add styles for highlight card paragraphs */
+  font-size: 18px;
+  text-align: center;
 }
