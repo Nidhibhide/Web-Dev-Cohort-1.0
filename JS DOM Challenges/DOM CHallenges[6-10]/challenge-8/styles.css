@@ -4,27 +4,27 @@ body {
   margin: 0 auto;
   padding: 20px;
 }
-
+/* 1 */
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   margin-bottom: 30px;
 }
-
+/* 2 */
 .product {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 8px;
   text-align: center;
 }
-
+/* 3 */
 .product img {
   width: 100%;
   max-width: 150px;
   height: auto;
 }
-
+/* 4 */
 .cart {
   border: 1px solid #ddd;
   padding: 20px;
@@ -49,7 +49,7 @@ button {
   padding: 5px 10px;
   cursor: pointer;
 }
-
+/* 1 */
 .empty-cart {
   text-align: center;
   color: #666;
