@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  position: relative;
+}
+
+.board {
+  width: 450px;
+  height: 720px;
+  background-color: gainsboro;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.task {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.btn {
+  width: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1%;
+  left: 25%;
+  background-color: rgb(62, 207, 62);
+  border: none;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.task-list {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.totaltasks {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: bisque;
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.newTask {
+  background-color: rgb(211, 211, 211);
+  width: 28%;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 5px;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.newTask.active {
+  visibility: visible;
+  top: 24%;
+  right: 35%;
+  z-index: 10;
+}
+
+.formHeader {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.formBtn {
+  display: flex;
+  gap: 15px;
+  justify-content: right;
+}
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.button {
+  background-color: red;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.inputField {
+  background-color: white;
+  height: 38px;
+  font-size: 15px;
+  border: none;
+  padding: 0px 5px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(5px); /* Blurry effect */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 5;
+}
+
+/* Show overlay when active */
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+.taskTitle {
+  font-size: 17px;
+  font-weight: bold;
+}
